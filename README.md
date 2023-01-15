@@ -8,7 +8,7 @@ python -m mypy src
 
 Repository with some notes and examples on testing
 
-- Testing types and a simple unit test
+- Testing types and a simple unit test x
 
 - Mocks: mocking a function and mocking a class
   - what is a mock
@@ -26,6 +26,7 @@ Repository with some notes and examples on testing
   - running pytest
   - config options
 
+- test exceptions
 
 - Pytest: fixtures
   - what is a fixture?
@@ -35,8 +36,8 @@ Repository with some notes and examples on testing
   - fixture can use fixture
 
 - Pytest: paramatrization
-  - testing a function with many variable
-  - feeding the paramatrized function a list of tuples
+  - testing a function with many variable x
+  - feeding the paramatrized function a list of tuples x
   - feed a zip of 2 lists
 
 - Pytest: side-effects
@@ -46,3 +47,16 @@ Repository with some notes and examples on testing
 - Pytest: test CLI tool
   - example cli tool
   - example test-case
+
+
+- pytest --pdb 
+
+- use tempfile
+
+- pytest's caplog fixture for logging during testing
+
+- capture stdout
+
+- mark tests
+
+- monkeypatch

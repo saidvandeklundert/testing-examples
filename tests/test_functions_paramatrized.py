@@ -32,6 +32,20 @@ def test_multiply_using_paramatrization_data(x, y, expected):
     assert multiply(x, y) == expected
 
 
+# paramatrize using several lists:
+X_VALUES = [2, 6, 1, 1]
+Y_VALUES = [2, 6, 1, 8]
+EXPECTED = [4, 36, 1, 8]
+
+
+@pytest.mark.parametrize(
+    "x, y, expected",
+    list(zip(X_VALUES, Y_VALUES, EXPECTED)),
+)
+def test_multiply_using_paramatrization_data_using_zip(x, y, expected):
+    assert multiply(x, y) == expected
+
+
 # stacking paramatrization decorator:
 @pytest.mark.parametrize(
     "y",
