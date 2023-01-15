@@ -3,6 +3,9 @@
 
 ```
 python -m pytest .
+python -m pytest . --durations=0
+python -m pytest . --durations=0 -vv
+python -m pytest . --durations=5 -vv
 python -m mypy src
 ```
 
@@ -38,7 +41,7 @@ Repository with some notes and examples on testing
 - Pytest: paramatrization
   - testing a function with many variable x
   - feeding the paramatrized function a list of tuples x
-  - feed a zip of 2 lists
+  - feed a zip of 2 lists x 
 
 - Pytest: side-effects
   - what is a side effect?
