@@ -2,18 +2,23 @@
 
 Testing is tedious but more fun with some easy examples.
 
-
-
-
+You can pull down the repo and run all tests like so:
 ```
 python -m pytest .
+```
+
+All of the tests pass. Other options to run the tests are:
+
+```
 python -m pytest  .\tests\test_patch_dict.py
 python -m pytest . --durations=5 -vv
 python -m pytest . --durations=5 -vv
 python -m mypy src
 ```
 
-Repository with some notes and examples on testing
+
+
+## Todo:
 
 - Testing types and a simple unit test x
 
@@ -25,6 +30,7 @@ Repository with some notes and examples on testing
 - Mocks: lots of short mock examples:
   - function x
   - class
+  - class method
   - dict x
   - building a mock with nested othter mocks
 
