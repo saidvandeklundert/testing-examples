@@ -4,6 +4,9 @@ Testing is tedious but more fun with some easy examples.
 
 Written as a lazydog for myself to remember how to do the things I regularly do but forget.
 
+Tests are [here](https://github.com/saidvandeklundert/testing-examples/tree/main/tests).
+
+
 You can pull down the repo and run all tests like so:
 ```
 python -m pytest .
