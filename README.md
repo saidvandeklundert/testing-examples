@@ -1,10 +1,14 @@
 ## Testing examples and notes
 
+Testing is tedious but more fun with some easy examples.
+
+
+
 
 ```
 python -m pytest .
-python -m pytest . --durations=0
-python -m pytest . --durations=0 -vv
+python -m pytest  .\tests\test_patch_dict.py
+python -m pytest . --durations=5 -vv
 python -m pytest . --durations=5 -vv
 python -m mypy src
 ```
@@ -19,9 +23,9 @@ Repository with some notes and examples on testing
   - mocking a class
 
 - Mocks: lots of short mock examples:
-  - function
+  - function x
   - class
-  - dict
+  - dict x
   - building a mock with nested othter mocks
 
 - Pytest: high-level and configuration overview
@@ -58,7 +62,7 @@ Repository with some notes and examples on testing
 
 - pytest's caplog fixture for logging during testing
 
-- capture stdout
+- capture stdout x
 
 - mark tests
 
