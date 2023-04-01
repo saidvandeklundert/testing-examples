@@ -1,5 +1,5 @@
 import pytest
-from under_test.functions import divide_small_numbers
+from src.functions import divide_small_numbers
 
 
 def test_divide_small_numbers_exception():
