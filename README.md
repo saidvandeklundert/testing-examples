@@ -2,7 +2,7 @@
 
 Testing is tedious but more fun with some easy examples.
 
-Written as a lazydog for me to remember how to do the things I regularly do but forget.
+Written as a lazydog for myself to remember how to do the things I regularly do but forget.
 
 You can pull down the repo and run all tests like so:
 ```
