@@ -1,4 +1,4 @@
-import requests
+import requests  # type: ignore
 
 
 def tell_if_it_is_sunny(location: str) -> str:

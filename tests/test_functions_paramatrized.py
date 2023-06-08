@@ -1,6 +1,7 @@
 from src.functions import multiply
 import pytest
 
+
 # paramatrize:
 @pytest.mark.parametrize(
     "x, y, expected",
@@ -81,3 +82,27 @@ def test_multiply_stacked_paramatrization(x, y):
     without throwing errors.
     """
     assert isinstance(multiply(x, y), int)
+
+
+@pytest.mark.parametrize(
+    "x, y, expected",
+    [
+        (2, 2, 4),
+    ],
+)
+def test_multiply_simple_paramatrization_and_fixture_1(x, y, expected, important_value):
+    assert important_value == "important_value"
+    result = multiply(x, y)
+    assert result == expected
+
+
+@pytest.mark.parametrize(
+    "x, y, expected",
+    [
+        (2, 2, 4),
+    ],
+)
+def test_multiply_simple_paramatrization_and_fixture_2(important_value, x, y, expected):
+    assert important_value == "important_value"
+    result = multiply(x, y)
+    assert result == expected
