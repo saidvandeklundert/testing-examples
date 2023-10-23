@@ -250,6 +250,11 @@ python -m pytest .\test_10_queue_moto.py
 ```
 
 
+# Few things to add
+
+- fixtures
+- ..
+
 
 Additional reading/watching:
 
