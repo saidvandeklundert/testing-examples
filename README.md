@@ -8,8 +8,9 @@ Tests are [here](https://github.com/saidvandeklundert/testing-examples/tree/main
 
 
 You can pull down the repo and run all tests like so:
+
 ```
-python -m pytest .
+python -m pytest tests\.
 ```
 
 All of the tests pass. Other options to run the tests are:
@@ -19,7 +20,6 @@ python -m pytest  .\tests\test_patch_dict.py
 python -m pytest . -k 'test_divide_small_numbers_exception'
 python -m pytest . --durations=5 -vv
 python -m pytest . --durations=5 -vv
-python -m mypy src
 ```
 
 

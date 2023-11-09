@@ -9,7 +9,6 @@ class ReportGenerator:
     """
 
     def generate_report(self) -> int:
-
         data = self._get_database_data()
 
         average = sum(data) // len(data)
