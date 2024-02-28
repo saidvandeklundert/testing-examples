@@ -40,5 +40,8 @@ def test_api_call_paginated():
     E07_side_effects.requests.get.side_effect = api_response_list
 
     response = E07_side_effects.api_call_paginated()
-
+    #breakpoint()
     assert response == expected
+    assert E07_side_effects.requests.get.assert_called
+    assert E07_side_effects.requests.get.call_count == 3
+    assert E07_side_effects.requests.get.assert_called_with('http://localhost/api/does_not_even_exist?page=2')

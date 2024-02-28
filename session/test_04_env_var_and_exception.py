@@ -21,5 +21,5 @@ def test_beta_return(patched_object):
 @mock.patch("E04_ENV_VAR_EXCEPTION.ENVIRONMENT")
 def test_exception_return(patched_object):
     patched_object.stage = "UNKNOWN"
-    with pytest.raises(RuntimeError):
+    with pytest.raises(RuntimeError,match="Unknown environment"):
         operations()
